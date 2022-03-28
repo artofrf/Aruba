@@ -2,9 +2,6 @@ import requests
 from pprint import pprint as pp
 import aruba_refresh_token
 import yaml
-### Notes ###
-#Ok, then use data.get('error', ''). x in '' is always False(for non-empty x). (Though really, it's doesn't matter what
-#you assign to data, as long as x in data is false as desired.)
 
 base_url = 'https://apigw-uswest4.central.arubanetworks.com'
 url = base_url + '/configuration/v2/groups?limit=20&offset=0'
